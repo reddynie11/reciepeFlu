@@ -3,15 +3,20 @@ import 'package:flutter/material.dart';
 import '../screens/category_meal_screen.dart';
 
 class CategoryGridItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
 
-  CategoryGridItem(this.title, this.color);
+  CategoryGridItem(this.id, this.title, this.color);
   
   void selectedCategory(BuildContext context){
-    Navigator.of(context).push(MaterialPageRoute(builder: (_){
-      return CategoryMealScreen();
-    } ));
+    Navigator.of(context).pushNamed(
+      CategoryMealScreen.navigationName, 
+      arguments: {
+        'id' : id,
+        'title': title
+      }
+    );
   }
 
   @override
