@@ -10,8 +10,9 @@ class CategoryGridItem extends StatelessWidget {
   Widget build(BuildContext context){
     return Container(
       padding: EdgeInsets.all(10),
-      child: Text(title),
-      color: color,
+      child: Text(title, style: Theme.of(context).textTheme.headline6,),
+      //color: color,
+      decoration: BoxDecoration(color:color,borderRadius: BorderRadius.circular(10)),
     );
   }
 }
