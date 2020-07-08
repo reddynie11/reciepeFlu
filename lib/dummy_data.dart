@@ -7,52 +7,52 @@ const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
     title: 'Italian',
-    color: Colors.purple,
+    color: 'https://cdn.pixabay.com/photo/2016/08/21/22/35/san-galgano-1610962_960_720.jpg',
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
-    color: Colors.red,
+    color: 'https://cdn.pixabay.com/photo/2014/07/19/08/30/stop-watch-396862_960_720.jpg',
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
-    color: Colors.orange,
+    color: 'https://cdn.pixabay.com/photo/2017/08/12/18/59/snack-2635035_960_720.jpg',
   ),
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.amber,
+    color: 'https://cdn.pixabay.com/photo/2016/06/10/10/33/2016-1447843_960_720.jpg',
   ),
   Category(
     id: 'c5',
-    title: 'Light & Lovely',
-    color: Colors.blue,
+    title: 'Salads',
+    color: 'https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg',
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
-    color: Colors.green,
+    color: 'https://cdn.pixabay.com/photo/2013/02/21/19/06/beach-84533_960_720.jpg',
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Colors.lightBlue,
+    color: 'https://cdn.pixabay.com/photo/2016/08/07/15/02/blueberries-1576407_960_720.jpg',
   ),
   Category(
     id: 'c8',
     title: 'Asian',
-    color: Colors.lightGreen,
+    color: 'https://cdn.pixabay.com/photo/2016/09/13/10/35/rice-1666913_960_720.jpg',
   ),
   Category(
     id: 'c9',
     title: 'French',
-    color: Colors.pink,
+    color: 'https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_960_720.jpg',
   ),
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.teal,
+    color: 'https://cdn.pixabay.com/photo/2014/05/27/15/22/deckchairs-355596_960_720.jpg',
   ),
 ];
 

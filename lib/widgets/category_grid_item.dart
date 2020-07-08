@@ -5,18 +5,13 @@ import '../screens/category_meal_screen.dart';
 class CategoryGridItem extends StatelessWidget {
   final String id;
   final String title;
-  final Color color;
+  final String color;
 
   CategoryGridItem(this.id, this.title, this.color);
-  
-  void selectedCategory(BuildContext context){
-    Navigator.of(context).pushNamed(
-      CategoryMealScreen.navigationName, 
-      arguments: {
-        'id' : id,
-        'title': title
-      }
-    );
+
+  void selectedCategory(BuildContext context) {
+    Navigator.of(context).pushNamed(CategoryMealScreen.navigationName,
+        arguments: {'id': id, 'title': title});
   }
 
   @override
@@ -24,18 +19,26 @@ class CategoryGridItem extends StatelessWidget {
     return InkWell(
       onTap: () => selectedCategory(context),
       child: Container(
-        padding: EdgeInsets.all(25),
-        child: Text(
-          title,
-          style: Theme.of(context).textTheme.headline6,
+        
+        decoration:
+            BoxDecoration(
+              image: DecorationImage(image: NetworkImage(color)),
+              borderRadius: BorderRadius.circular(10)
+            ),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10), 
+            color: Colors.black54
+          ),
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+          child: Center(
+            child: Text(
+              title,
+              style: TextStyle(
+                  fontSize: 20, fontFamily: 'Roboto', color: Colors.white),
+            ),
+          ),
         ),
-        //color: color,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            gradient: LinearGradient(
-                colors: [color.withOpacity(0.5), color],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight)),
       ),
     );
   }
